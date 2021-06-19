@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
 void showGrid(char grid[]){
     for(int i = 0; i<9; i ++){

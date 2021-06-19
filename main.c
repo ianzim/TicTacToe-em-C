@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "game.h"
-#include <stdbool.h>
 
 int main(){
     int turns = 0;
@@ -36,7 +35,6 @@ int main(){
             break;
         }
 
-
         if(turns == 8){
             system("cls");
             showGrid(grid);
@@ -47,7 +45,6 @@ int main(){
                     '7', '8', '9'};
             break;
         }
-
 
         system("cls");
         showGrid(grid);
