@@ -12,8 +12,8 @@ void showGrid(char grid[]){
     }
 }
 
-bool win(char grid[]){
-    if(grid[0] == grid[1] == grid[2] || grid[3] == grid[4] == grid[5] || grid[6] == grid[7] == grid[8] || grid[0] == grid[3] == grid[6] || grid[1] == grid[4] == grid[7] || grid[2] == grid[5] == grid[8] || grid[0] == grid[4] == grid[8] || grid[2] == grid[4] == grid[6]){
-        return true;
+int checkWin(char grid[]){
+    if(grid[0] == grid[1] && grid[1] == grid[2] || grid[3] == grid[4] && grid[4] == grid[5] || grid[6] == grid[7] && grid[7] == grid[8] || grid[0] == grid[3] && grid[3] == grid[6] || grid[1] == grid[4] && grid[4] == grid[7] || grid[2] == grid[5] && grid[5] == grid[8] || grid[0] == grid[4] && grid[4] == grid[8] || grid[2] == grid[4] && grid[4] == grid[6]){
+        return 1;
     }
 }

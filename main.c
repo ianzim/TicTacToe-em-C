@@ -29,17 +29,14 @@ int main(){
 
         }
 
-        if(win(grid) == true){
+        if(checkWin(grid) == 1){
             system("cls");
             showGrid(grid);
             printf("\nTEMOS UM VENCEDOR");
-            char grid[] = {
-                    '1', '2', '3', 
-                    '4', '5', '6', 
-                    '7', '8', '9'};
             break;
-        } 
-        
+        }
+
+
         if(turns == 8){
             system("cls");
             showGrid(grid);
@@ -57,6 +54,7 @@ int main(){
         turns++;
     }
 
-
     return 0;
 }
+
+
