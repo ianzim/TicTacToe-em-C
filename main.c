@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "game.h"
+#include <stdbool.h>
 
 int main(){
     int turns = 0;
@@ -14,7 +15,6 @@ int main(){
 
     while(1==1){
         int pos;
-
         if(turns % 2 == 0){
 
             printf("\nIn what position do you want to put the X? ");
@@ -29,8 +29,27 @@ int main(){
 
         }
 
+        if(win(grid) == true){
+            system("cls");
+            showGrid(grid);
+            printf("\nTEMOS UM VENCEDOR");
+            char grid[] = {
+                    '1', '2', '3', 
+                    '4', '5', '6', 
+                    '7', '8', '9'};
+            break;
+        } 
         
-        
+        if(turns == 8){
+            system("cls");
+            showGrid(grid);
+            printf("\nEMPATE");
+            char grid[] = {
+                    '1', '2', '3', 
+                    '4', '5', '6', 
+                    '7', '8', '9'};
+            break;
+        }
 
 
         system("cls");
